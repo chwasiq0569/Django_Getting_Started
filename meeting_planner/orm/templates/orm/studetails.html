@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>STUDENTS</h1>
+    {% if stu %} {% for st in stu %}
+    <h2>{{st.stuid}}</h2>
+    <h2>{{st.stuname}}</h2>
+    <h2>{{st.stuemail}}</h2>
+    <h2>{{st.stuepass}}</h2>
+    <h2>{{st.comment}}</h2>
+    {% endfor %} {% else %}
+    <h1>NO STUDENTS</h1>
+    {% endif %}
+  </body>
+</html>
