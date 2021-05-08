@@ -5,6 +5,6 @@ from django.http import HttpResponse
 
 
 def studentinfo(request):
-    stud = Student.objects.all()
+    stud = Student.objects.get(pk=2)
     return render(request, 'templates/orm/studetails.html', {'stu': stud})
     # return HttpResponse('egege')
