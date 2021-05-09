@@ -9,3 +9,6 @@ class Student(models.Model):
     stuemail = models.EmailField(max_length=70)
     stuepass = models.CharField(max_length=70)
     comment = models.CharField(max_length=70, default='not avaiable')
+
+    def __str__(self):
+        return self.stuname
